@@ -1,0 +1,54 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+        <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+        	<div class="panel panel-default">
+        		<div class="panel-heading">
+			    		<h3 class="panel-title">Add/Update Vehicle </h3>
+			 			</div>
+			 			<div class="panel-body">
+			    		<form [formGroup]="userForm">
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			                <input type="text" name="vehicleName" id="vehicleName" class="form-control input-sm" placeholder="Vehicle Name" formControlName="vehicleName">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" name="vehicleType" id="vehicleType" class="form-control input-sm" placeholder="Vehicle Type" formControlName="vehicleType">
+			    					</div>
+			    				</div>
+			    			</div>
+
+			    			
+							
+								
+
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+									<input type="text" name="vehicleColor" id="vehicleColor" class="form-control input-sm" placeholder="Vehicle Color" formControlName="vehicleColor">
+								</div>
+			    				</div>
+			    			</div>
+							<!-- <div class="form-group">
+								<input type="radio" name="genMale" id ="genMale" value="male" formControlName="gender[0]" >Male
+								
+							</div>
+							<div>
+								<input type="radio" name="genFemale"   id ="genFemale"  value="female" formControlName="genFemale">Female<br>
+
+							</div> -->
+			    			<input type="submit" value="Confirm" class="btn btn-info btn-block" (click)="registerUser()">
+			    		
+			    		</form>
+			    	</div>
+	    		</div>
+    		</div>
+    	</div>
+    </div>
